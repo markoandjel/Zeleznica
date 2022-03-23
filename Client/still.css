@@ -1,0 +1,302 @@
+body
+{
+    background: whitesmoke;
+}
+
+.GlavniKontejner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Vozovi, .Stanice
+{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.Naslovi {
+    display: flex;
+    justify-content:center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: rgba(165, 42, 42, 0.863);
+    font-size: large;
+    font-weight: 700;
+}
+
+/*.Tabela{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 9px 5px;
+}*/
+
+.divVUS
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.prikazVozovi, .prikazStanice{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.prikazRute{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Tabela{
+    align-self: flex-start;
+    width: 60%;
+    border-collapse: collapse;
+    margin: 50px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.Tabela thead tr{
+    background-color: rgb(197, 155, 100);
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color:black;
+    font-size: x-large;
+}
+
+.Tabela thead th{
+    text-align: center;
+}
+
+.Tabela th, .Tabala td
+{
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.Tabela tbody tr {
+    border-bottom: 1px solid #700000;
+    font-size: large;
+    font-weight: bold;
+  }
+
+.Tabela tbody tr:hover {
+    background-color: rgb(197, 155, 100);
+    border-radius: 0px;
+  }
+
+.VozoviRed td, .StanicaRed td, .RuteRed td, .VUSRed td
+{
+    text-align: center;
+    padding: 5px;
+}
+
+.VozoviRedSelected td, .StanicaRedSelected td, .CenaSelected, .VUSRedSelected td
+{
+    background-color: #9e2020ea;
+    text-align: center;
+    padding: 5px;
+}
+
+.CenaSelected
+{
+    border-radius: 8px;
+}
+
+.RuteRed button
+{
+   display: block;
+   margin: auto;
+}
+
+.PolaznaStanicaDIV, .KrajnjaStanicaDIV
+{
+    width: 100%;
+}
+
+.PolaznaStanicaDIV .Tabela, .KrajnjaStanicaDIV .Tabela
+{
+    width: 70%;
+}
+
+.PolaznaStanicaDIV .Naslovi, .KrajnjaStanicaDIV .Naslovi
+{
+    font-size:25pt;
+    font-weight: 900;
+    padding-bottom: 0px;
+    margin-top: 60px;
+}
+
+.PolaznaStanicaDIV .prikazStanice, .KrajnjaStanicaDIV .prikazStanice
+{
+    margin-top: -25px;
+}
+
+/*.KapacitetVozInput{
+    background-color: #700000;
+}*/
+
+.VozoviNaslovi, .StaniceNaslovi
+{
+    display: grid;
+    grid-gap: 20px;;
+    grid-template-columns: 3fr 1fr;
+    font-style: italic;
+    border-bottom: 2px solid green;
+    width: 100%;
+}
+
+
+.VozoviOptions, .StaniceOptions{
+    margin-top: 50px;
+    font-size: x-large;
+}
+
+.UnosVozova button, .UnosStanica button, .Pocetna button
+{
+    margin: 10px 10px;
+    align-self: center;
+}
+.UnosVozova, .EditVozova, .UnosStanica, .EditStanica
+{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.UnosVozova input, .EditVozova input, .UnosStanica input, .EditStanica input
+{
+    background: white;
+    border-radius: 20px;
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+.UnosVozova label, .EditVozova label, .UnosStanica label, .EditStanica label
+{
+    font-style: normal;
+    text-align: center;
+}
+
+.Navigation{
+    background: white;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    text-align: center;
+
+}
+
+.Navigation div{
+    margin: 10px;
+    font-size:xx-large;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: max-content;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.Navigation div:hover
+{
+    background-color: burlywood;
+    border-radius: 30px;
+}
+
+.VozoviOptions div, .StaniceOptions div{
+    display: flex;
+    justify-content: space-around;
+}
+.VozoviOptions button, .StaniceOptions button, .Pocetna button, .RuteRed td button, .Dugme{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .VozoviOptions button:hover, .StaniceOptions button:hover, .Pocetna button:hover,.RuteRed button:hover, .Dugme:hover {
+    background-color: #fff;
+  }
+  
+  .VozoviOptions button:active, .StaniceOptions button:active, .Pocetna button:active, .RuteRed button:active, .Dugme:active{
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+  .Pocetna{
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+  }
+
+ /* .PolaznaStanicaDIV, .KrajnjaStanicaDIV
+  {
+
+  }*/
+
+
+@media (min-width: 768px) {
+    .VozoviOptions button, .StaniceOptions button {
+      min-width: 120px;
+      padding: 0 25px;
+    }
+  }
+@media (max-width:480px)
+{
+    .Navigation {
+        flex-direction: column;
+    }
+
+    .Navigation div{
+        border-radius: 0px;
+        margin: 0px;
+    }
+    
+}
+
+@media (max-width:1400px)
+{
+    .prikazVozovi, .prikazStanice, .prikazRute
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Tabela
+    {
+    width: 100%;  
+    }
+}
